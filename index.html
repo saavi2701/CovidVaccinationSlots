@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="jquery-ui.min.css">
+    <link rel="stylesheet" href="app/scss/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="container-heading">
+            <h1>Covid Vaccination Centers</h1>
+            <p>Check for the availabilty of Covid Vaccination centers in your area.</p>
+            <div id="searchWrapper">
+                <input type="text" name="searchBar" id="searchBar" placeholder="Enter your pincode* (Required)">
+                <input type="text" name="datepicker" id="datepicker" placeholder="Enter date">
+            </div>
+            <button id="submitBtn" type="submit" onclick="loadCenters()">Submit</button>
+        </div>
+        <div class="container-body">
+            <ul id="centersList"><p id="warning"></p></ul>
+        </div>
+    </div>
+    
+
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    <script src="app/js/script.js"></script>
+</body>
+</html>
